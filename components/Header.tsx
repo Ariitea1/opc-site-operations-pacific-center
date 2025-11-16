@@ -19,9 +19,9 @@ export default function Header() {
             />
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="font-semibold text-white text-lg">PFOTC</span>
+            <span className="font-semibold text-white text-lg">OPC</span>
             <span className="text-sm text-gray-300">
-              Pacific Flight Operations & Training Center
+              Operations Pacific Center
             </span>
             <span className="text-xs text-cyan-400">
               Integrated Flight Operations
