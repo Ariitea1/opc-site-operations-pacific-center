@@ -2,17 +2,11 @@
 
 export default function Hero() {
   return (
-  <h1 className="text-4xl md:text-6xl font-extrabold text-white text-center">
-  Operations Pacific Center
-  <span className="block text-3xl md:text-5xl text-blue-400 mt-2">
-    Integrated Flight Ops, Training & Aviation Services
-  </span>
-</h1>
-
-<p className="text-lg md:text-xl text-gray-300 mb-10">
-  Expertise, Formation & Innovation au service des opérations aériennes.
-</p>
-
+    <section className="max-w-5xl text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+        Pacific Flight Operations <br />
+        <span className="text-gradient">& Training Center</span>
+      </h1>
 
       <p className="text-lg md:text-xl text-gray-300 mb-10">
         Expertise, Formation & Innovation au service des opérations aériennes.
