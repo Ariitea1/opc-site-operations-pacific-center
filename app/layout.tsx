@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
 
         {/* 👇 CONTENU */}
-        <main className="relative z-[50]">{children}</main>
+        <main>{children}</main>
 
         {/* 👇 FOOTER */}
         <Footer />
