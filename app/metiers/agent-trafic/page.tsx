@@ -1,6 +1,14 @@
 "use client";
 
+import { useEffect } from "react";
+
 export default function AgentTraficPage() {
+  // Désactive le background global du layout pour cette page uniquement
+  useEffect(() => {
+    document.body.classList.add("no-horizon-bg");
+    return () => document.body.classList.remove("no-horizon-bg");
+  }, []);
+
   return (
     <main className="relative overflow-hidden bg-[#071021] text-white min-h-screen">
 
@@ -16,7 +24,7 @@ export default function AgentTraficPage() {
         aria-hidden
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
-          background: "rgba(0,0,0,0.25)" // 0.08 → trop faible, 0.25 = parfait
+          background: "rgba(0,0,0,0.25)",
         }}
       />
 
