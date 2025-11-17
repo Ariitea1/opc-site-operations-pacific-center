@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="max-w-5xl text-center pt-27 mx-auto">
+    <section className="max-w-5xl text-center pt-27.5 mx-auto">
 
       {/* Titre principal */}
       <h1 className="text-4xl md:text-5xl font-bold leading-tight">
