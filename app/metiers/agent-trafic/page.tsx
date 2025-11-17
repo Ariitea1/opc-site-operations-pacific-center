@@ -5,61 +5,11 @@ export default function AgentTraficPage() {
     <main className="relative overflow-hidden bg-[#071021] text-white min-h-screen">
       
       {/* === IMAGE DE FOND === */}
- {/* === IMAGE DE FOND === */}
-<img
-  src="/images/lm_opc.png"
-  alt="Agent de Trafic / Loadsheet"
-  className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
-/>
-
-{/* === FILTRE IMMERSIF OCC === */}
-<div
-  aria-hidden
-  className="absolute inset-0 z-10 pointer-events-none"
-  style={{
-    background:
-      "radial-gradient(1200px 400px at 50% 65%, rgba(0,150,255,0.28), rgba(0,150,255,0) 60%), rgba(0,0,0,0.35)",
-    mixBlendMode: "overlay",
-  }}
-></div>
-
-{/* === VIGNETTE / CONTRASTE GLOBAL === */}
-<div
-  aria-hidden
-  className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-b from-[#071021]/40 via-[#071021]/20 to-[#071021]/60"
-/>
-{/* === HALO OCC === */}
-<div
-  aria-hidden
-  className="absolute inset-0 z-10 pointer-events-none"
-  style={{
-    background:
-      "radial-gradient(1100px 380px at 50% 65%, rgba(0,150,255,0.22), rgba(0,150,255,0) 60%)",
-    mixBlendMode: "overlay",
-  }}
-/>
-
-{/* === VIGNETTE SOMBRE PREMIUM === */}
-<div
-  aria-hidden
-  className="absolute inset-0 z-20 pointer-events-none"
-  style={{
-    background:
-      "linear-gradient(to bottom, rgba(7,16,33,0.55), rgba(7,16,33,0.75))",
-  }}
-/>
-{/* === CONTRASTE LÉGER PREMIUM === */}
-<div
-  aria-hidden
-  className="absolute inset-0 z-20 pointer-events-none"
-  style={{
-    background:
-      "rgba(0,0,0,0.15)",   // léger assombrissement (15%)
-    mixBlendMode: "multiply", // renforce le contraste sans assombrir trop
-  }}
-></div>
-
-<div className="absolute inset-0 bg-gradient-to-b from-[#071021]/70 via-[#071021]/40 to-[#071021]/80 z-10" />
+     <img
+        src="/images/lm_opc.png"
+        alt="Agent de Trafic / Loadsheet"
+        className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
+      />
 
       {/* === DÉGRADÉ DE CONTRASTE === */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/60 via-[#071021]/30 to-[#071021]/80 z-10" />
@@ -84,12 +34,12 @@ export default function AgentTraficPage() {
         </p>
 
         <blockquote className="mt-10 text-cyan-400 text-lg italic border-l-4 border-cyan-400 pl-4">
-          OPC forme ces spécialistes du poids et de l’équilibre, artisans invisibles
+          PFOTC forme ces spécialistes du poids et de l’équilibre, artisans invisibles
           de la sécurité du vol.
         </blockquote>
 
         <footer className="mt-20 text-sm text-gray-500 text-center">
-          © OPC — <span className="text-cyan-400">Pacific Hub Tahiti</span>
+          © PFOTC — <span className="text-cyan-400">Pacific Hub Tahiti</span>
         </footer>
       </div>
     </main>
