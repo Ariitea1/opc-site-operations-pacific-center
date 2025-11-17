@@ -49,7 +49,7 @@ export default function ServicesSection() {
       Consulting Services
     </h3>
     <p className="text-slate-300 text-sm">
-      Regulatory Compliance, Manuals, ETOPS, DAC Support & Ferry Flight Expertise
+      Regulatory Compliance Support, Operational Manuals, ETOPS & Ferry Expertise
     </p>
   </div>
 </Link>
