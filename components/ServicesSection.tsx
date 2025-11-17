@@ -16,7 +16,7 @@ export default function ServicesSection() {
             Flight Operations Services
           </h3>
           <p className="text-slate-300 text-sm">
-            OCC, Dispatch, Loadsheet – supervision 24/7 et solutions remote.
+            OCC, Load Control, 24/7 Flight Watch & Remote Solutions
           </p>
         </div>
       </Link>
