@@ -46,10 +46,10 @@ export default function ServicesSection() {
   <div className="flex flex-col items-center text-center">
     <div className="text-3xl mb-3">🌐</div>
     <h3 className="font-semibold text-lg mb-2 text-white">
-      Consulting & Partnerships
+      Consulting Services
     </h3>
     <p className="text-slate-300 text-sm">
-      OMD, MEL/ETOPS, DAC, Ferry – expertise opérationnelle.
+      Regulatory Compliance, Manuals, ETOPS, DAC Support & Ferry Flight Expertise
     </p>
   </div>
 </Link>
