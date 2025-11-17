@@ -10,8 +10,8 @@ export default function Hero() {
       </h1>
 
       {/* Slogan bleu */}
-      <h2 className="text-3xl md:text-4xl font-bold text-gradient mt-3">
-        Integrated Flight Ops, Training & Aviation Services
+      <h2 className="text-3xl md:text-4xl font-bold text-gradient mt-3 leading-snug">
+      Integrated Flight Ops, Training & Aviation Services
       </h2>
 
       {/* Sous-texte */}
