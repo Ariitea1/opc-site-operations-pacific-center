@@ -1,9 +1,14 @@
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { ReactNode } from "react";
 
-export default function RootLayout({ children }) {
+export const metadata = {
+  title: "PFOTC – Pacific Flight Operations & Training Center",
+  description:
+    "Expertise, Formation & Innovation au service des opérations aériennes.",
+};
+
+export default function Layout({ children }) {
   return (
     <html lang="fr">
       <body
@@ -21,18 +26,19 @@ export default function RootLayout({ children }) {
           bg-bottom
         "
       >
+        {/* Halo */}
         <div className="hero-halo"></div>
 
-        {/* plus de relative/z-index ici */}
-        <div>
-          <Header />
+        {/* 🎯 Header FIXE */}
+        <Header />
 
-          {/* plus de z-index/relative ici */}
-          <main>{children}</main>
+        {/* CONTENU */}
+        <main>{children}</main>
 
-          <Footer />
-        </div>
+        {/* FOOTER */}
+        <Footer />
 
+        {/* Horizon Soft */}
         <div className="opc-horizon"></div>
       </body>
     </html>
