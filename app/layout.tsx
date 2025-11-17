@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "PFOTC – Pacific Flight Operations & Training Center",
+  title: "OPC – Operations Pacific Center",
   description:
     "Expertise, Formation & Innovation au service des opérations aériennes.",
   icons: {
@@ -22,33 +22,38 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="fr">
       <body
         className="
-          relative 
-          overflow-x-hidden 
-          text-white 
-          min-h-screen 
-          bg-[#0b1220] 
-          bg-[url('/background_horizon.png')] 
-          bg-no-repeat 
-          bg-cover 
-          bg-center 
-          bg-fixed 
+          relative
+          text-white
+          min-h-screen
+          overflow-x-hidden
+          overflow-y-auto
+          bg-[#0b1220]
+          bg-[url('/background_horizon.png')]
+          bg-no-repeat
+          bg-cover
+          bg-center
+          bg-fixed
           bg-bottom
         "
       >
-        {/* 🌌 Halo central derrière le bloc titre */}
+        {/* Halo central (background ambiance OPC) */}
         <div className="hero-halo"></div>
 
-        {/* Conteneur global du contenu */}
-        <div className="relative z-10">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </div>
-        
-      {/* Horizon OPC Soft */}
+        {/* HEADER FIXE */}
+        <Header />
+
+        {/* CONTENU */}
+        <main className="relative z-10">
+          {children}
+        </main>
+
+        {/* FOOTER */}
+        <Footer />
+
+        {/* Horizon OPC Soft */}
         <div className="opc-horizon"></div>
-        
-        {/* Bandeau bleu retiré */}
+
+        {/* Ancien horizon supprimé */}
         {/*
         <div className="horizon"></div>
         <div className="horizon-line"></div>
