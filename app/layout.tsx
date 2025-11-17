@@ -44,7 +44,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main>{children}</main>
           <Footer />
         </div>
-
+        
+      {/* Horizon OPC Soft */}
+        <div className="opc-horizon"></div>
+        
         {/* Bandeau bleu retiré */}
         {/*
         <div className="horizon"></div>
