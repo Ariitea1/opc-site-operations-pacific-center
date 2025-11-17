@@ -48,6 +48,16 @@ export default function AgentTraficPage() {
       "linear-gradient(to bottom, rgba(7,16,33,0.55), rgba(7,16,33,0.75))",
   }}
 />
+{/* === CONTRASTE LÉGER PREMIUM === */}
+<div
+  aria-hidden
+  className="absolute inset-0 z-20 pointer-events-none"
+  style={{
+    background:
+      "rgba(0,0,0,0.15)",   // léger assombrissement (15%)
+    mixBlendMode: "multiply", // renforce le contraste sans assombrir trop
+  }}
+></div>
 
 <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/70 via-[#071021]/40 to-[#071021]/80 z-10" />
 
