@@ -26,9 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     bg-bottom
   "
 >
-        "
-      >
-
+        
         {/* 👇 WRAPPER ISOLÉ — effets visuels NON parents du header */}
         <div className="pointer-events-none fixed inset-0 z-[1]">
           <div className="hero-halo absolute inset-0"></div>
