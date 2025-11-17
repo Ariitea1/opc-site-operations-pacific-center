@@ -3,41 +3,34 @@
 export default function AgentTraficPage() {
   return (
     <main className="relative overflow-hidden bg-[#071021] text-white min-h-screen">
-      
+
       {/* === IMAGE DE FOND === */}
-    <main className="relative overflow-hidden bg-[#071021] text-white min-h-screen">
-  <img
-    src="/images/lm_opc.png"
-    alt="Agent de Trafic / Loadsheet"
-    className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
-  />
+      <img
+        src="/images/lm_opc.png"
+        alt="Agent de Trafic / Loadsheet"
+        className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
+      />
 
-  {/* ---- CONTRASTE LÉGER ---- */}
-  <div
-    aria-hidden
-    className="absolute inset-0 z-10 pointer-events-none"
-    style={{
-      background: "rgba(0,0,0,0.08)",
-    }}
-  />
+      {/* === CONTRASTE LÉGER === */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none z-10"
+        style={{
+          background: "rgba(0,0,0,0.08)",
+        }}
+      />
 
-  <div className="relative z-20 px-6 py-24 max-w-5xl mx-auto">
-    ...
-  </div>
-</main>
+      {/* === DÉGRADÉ SUPPLÉMENTAIRE (optionnel) === */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/60 via-[#071021]/30 to-[#071021]/80 z-20" />
 
-
-      {/* === DÉGRADÉ DE CONTRASTE === */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/60 via-[#071021]/30 to-[#071021]/80 z-10" />
-
-      {/* === CONTENU === */}
-      <div className="relative z-20 px-6 py-24 max-w-5xl mx-auto">
+      {/* === CONTENU TEXTE === */}
+      <div className="relative z-30 px-6 py-24 max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-cyan-400">
           Agent de Trafic – Loadsheet & Masses
         </h1>
 
         <p className="text-gray-300 mb-6 leading-relaxed">
-          <strong>À l’interface du sol et du vol, il calcule, équilibre et sécurise.</strong>{' '}
+          <strong>À l’interface du sol et du vol, il calcule, équilibre et sécurise.</strong>{" "}
           L’Agent de Trafic élabore le plan de chargement et la feuille de centrage (Loadsheet)
           en fonction des passagers, du fret et du carburant.  
           Il assure l’équilibre de l’avion pour garantir un vol sûr, conforme et optimisé.
