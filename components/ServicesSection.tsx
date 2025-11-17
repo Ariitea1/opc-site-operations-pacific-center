@@ -32,7 +32,7 @@ export default function ServicesSection() {
             Training & CBTA Modules
           </h3>
           <p className="text-slate-300 text-sm">
-            Initial, recurrent, CBTA – conformité EASA/ICAO.
+            Initial, Recurrent, CBTA – Conformité EASA/ICAO
           </p>
         </div>
       </Link>
