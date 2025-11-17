@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 left-0 right-0 z-[100] backdrop-blur-md bg-[#0a0f1f]/90 border-b border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        
-        {/* LOGO + TEXTE */}
+
+        {/* LOGO */}
         <div className="flex items-center space-x-3">
           <Image
             src="/favicon_bleu_nuit.png"
@@ -24,7 +24,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* NAVIGATION */}
+        {/* NAV */}
         <nav className="flex space-x-8 text-sm font-medium">
           <Link href="/" className="hover:text-cyan-400">Accueil</Link>
           <Link href="/formations" className="hover:text-cyan-400">Formations</Link>
@@ -32,6 +32,7 @@ export default function Header() {
           <Link href="/metiers" className="hover:text-cyan-400">Métiers</Link>
           <Link href="/contact" className="hover:text-cyan-400">Contact</Link>
         </nav>
+
       </div>
     </header>
   );
