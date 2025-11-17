@@ -2,10 +2,12 @@
 
 export default function Hero() {
   return (
-    <section className="max-w-5xl text-center">
+    <section className="max-w-5xl text-center pt-28">
       <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
         Operations Pacific Center <br />
-        <span className="text-gradient">Integrated Flight Ops, Training & Aviation Services</span>
+        <span className="text-gradient">
+          Integrated Flight Ops, Training & Aviation Services
+        </span>
       </h1>
 
       <p className="text-lg md:text-xl text-gray-300 mb-10">
