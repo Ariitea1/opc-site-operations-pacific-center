@@ -44,7 +44,7 @@ export default function ServicesSection() {
   className="card-pfotc p-6 hover:ring-1 hover:ring-cyan-400 transition rounded-2xl bg-white/5 backdrop-blur-md border border-white/10"
 >
   <div className="flex flex-col items-center text-center">
-    <div className="text-3xl mb-3">🛫</div>
+    <div className="text-3xl mb-3">🌐</div>
     <h3 className="font-semibold text-lg mb-2 text-white">
       Consulting Services
     </h3>
