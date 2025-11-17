@@ -151,6 +151,11 @@ body {
   z-index: 0;
 }
 
+/* Désactive le background horizon pour certaines pages */
+.no-horizon-bg {
+  background-image: none !important;
+}
+
 
 /* =========================================================
    🧭 Fin du globals.css PFOTC
