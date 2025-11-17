@@ -5,12 +5,11 @@ export default function AgentTraficPage() {
     <main className="relative overflow-hidden bg-[#071021] text-white min-h-screen">
       
       {/* === IMAGE DE FOND === */}
-     <img
-  src="/images/lm_opc.png"
-  alt="Agent de trafic"
-  className="absolute inset-0 w-full h-full object-cover brightness-95 z-0 scale-95 blur-[1px]"
-  style={{ objectPosition: "60% center" }}
-/>
+  <img
+        src="/images/lm_opc.png"
+        alt="Agent de Trafic / Loadsheet"
+        className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
+      />
 
 <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/70 via-[#071021]/40 to-[#071021]/80 z-10" />
 
