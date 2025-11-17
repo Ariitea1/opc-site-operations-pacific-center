@@ -45,9 +45,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Footer />
         </div>
 
-        {/* Halo et ligne lumineuse – Horizon animé */}
+        {/* Bandeau bleu retiré */}
+        {/*
         <div className="horizon"></div>
         <div className="horizon-line"></div>
+        */}
       </body>
     </html>
   );
