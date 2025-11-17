@@ -36,12 +36,12 @@ export default function AgentTraficPage() {
         </p>
 
         <blockquote className="mt-10 text-cyan-400 text-lg italic border-l-4 border-cyan-400 pl-4">
-          PFOTC forme ces spécialistes du poids et de l’équilibre, artisans invisibles
+          OPC forme ces spécialistes du poids et de l’équilibre, artisans invisibles
           de la sécurité du vol.
         </blockquote>
 
         <footer className="mt-20 text-sm text-gray-500 text-center">
-          © PFOTC — <span className="text-cyan-400">Pacific Hub Tahiti</span>
+          © OPC — <span className="text-cyan-400">Pacific Hub Tahiti</span>
         </footer>
       </div>
     </main>
