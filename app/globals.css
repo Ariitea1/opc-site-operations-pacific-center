@@ -155,7 +155,14 @@ body {
 .no-horizon-bg {
   background-image: none !important;
 }
-
+.hero-halo,
+.opc-horizon,
+.horizon,
+.horizon-line {
+  z-index: 0 !important;
+  pointer-events: none !important;
+  position: fixed !important;
+}
 
 /* =========================================================
    🧭 Fin du globals.css PFOTC
