@@ -11,20 +11,18 @@ export default function AgentTraficPage() {
         className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
       />
 
-      {/* === CONTRASTE LÉGER === */}
+      {/* === VOILE DE CONTRASTE (léger) === */}
       <div
         aria-hidden
-        className="absolute inset-0 pointer-events-none z-10"
+        className="absolute inset-0 z-10 pointer-events-none"
         style={{
-          background: "rgba(0,0,0,0.08)",
+          background: "rgba(0,0,0,0.25)" // 0.08 → trop faible, 0.25 = parfait
         }}
       />
 
-      {/* === DÉGRADÉ SUPPLÉMENTAIRE (optionnel) === */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/60 via-[#071021]/30 to-[#071021]/80 z-20" />
+      {/* === CONTENU === */}
+      <div className="relative z-20 px-6 py-24 max-w-5xl mx-auto">
 
-      {/* === CONTENU TEXTE === */}
-      <div className="relative z-30 px-6 py-24 max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-cyan-400">
           Agent de Trafic – Loadsheet & Masses
         </h1>
