@@ -2,22 +2,31 @@
 
 import { motion } from "framer-motion";
 
+// Animation container : plus lente, plus douce
 const container = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 1.0,
       ease: "easeOut",
-      staggerChildren: 0.12,
+      staggerChildren: 0.18, // éléments qui apparaissent plus lentement
     },
   },
 };
 
+// Animation des éléments individuels : plus smooth
 const item = {
-  hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 22 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.9,
+      ease: [0.16, 1, 0.3, 1], // easing premium type "expo"
+    },
+  },
 };
 
 export default function Hero() {
