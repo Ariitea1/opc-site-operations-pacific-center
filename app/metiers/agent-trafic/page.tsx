@@ -28,6 +28,26 @@ export default function AgentTraficPage() {
   aria-hidden
   className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-b from-[#071021]/40 via-[#071021]/20 to-[#071021]/60"
 />
+{/* === HALO OCC === */}
+<div
+  aria-hidden
+  className="absolute inset-0 z-10 pointer-events-none"
+  style={{
+    background:
+      "radial-gradient(1100px 380px at 50% 65%, rgba(0,150,255,0.22), rgba(0,150,255,0) 60%)",
+    mixBlendMode: "overlay",
+  }}
+/>
+
+{/* === VIGNETTE SOMBRE PREMIUM === */}
+<div
+  aria-hidden
+  className="absolute inset-0 z-20 pointer-events-none"
+  style={{
+    background:
+      "linear-gradient(to bottom, rgba(7,16,33,0.55), rgba(7,16,33,0.75))",
+  }}
+/>
 
 <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/70 via-[#071021]/40 to-[#071021]/80 z-10" />
 
