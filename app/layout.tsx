@@ -1,20 +1,11 @@
 import "./globals.css";
-import { ReactNode } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { ReactNode } from "react";
 
 export const metadata = {
   title: "OPC – Operations Pacific Center",
-  description:
-    "Expertise, Formation & Innovation au service des opérations aériennes.",
-  icons: {
-    icon: [
-      { url: "/favicon_transparent.png", type: "image/png" },
-      { url: "/favicon_bleu_nuit.png", type: "image/png" },
-    ],
-    shortcut: ["/favicon_transparent.png"],
-    apple: ["/favicon_bleu_nuit.png"],
-  },
+  description: "Expertise, Formation & Innovation au service des opérations aériennes.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -22,42 +13,35 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="fr">
       <body
         className="
-          relative
-          text-white
-          min-h-screen
-          overflow-x-hidden
-          overflow-y-auto
+          text-white 
+          min-h-screen 
           bg-[#0b1220]
           bg-[url('/background_horizon.png')]
-          bg-no-repeat
-          bg-cover
-          bg-center
-          bg-fixed
+          bg-no-repeat 
+          bg-cover 
+          bg-center 
+          bg-fixed 
           bg-bottom
+          overflow-x-hidden
+          overflow-y-auto
         "
       >
-        {/* Halo central (background ambiance OPC) */}
-        <div className="hero-halo"></div>
 
-        {/* HEADER FIXE */}
+        {/* 👇 WRAPPER ISOLÉ — effets visuels NON parents du header */}
+        <div className="pointer-events-none fixed inset-0 z-[1]">
+          <div className="hero-halo absolute inset-0"></div>
+          <div className="opc-horizon absolute inset-0"></div>
+        </div>
+
+        {/* 👇 HEADER collant visible en permanence */}
         <Header />
 
-        {/* CONTENU */}
-        <main className="relative z-10">
-          {children}
-        </main>
+        {/* 👇 CONTENU */}
+        <main className="relative z-[50]">{children}</main>
 
-        {/* FOOTER */}
+        {/* 👇 FOOTER */}
         <Footer />
 
-        {/* Horizon OPC Soft */}
-        <div className="opc-horizon"></div>
-
-        {/* Ancien horizon supprimé */}
-        {/*
-        <div className="horizon"></div>
-        <div className="horizon-line"></div>
-        */}
       </body>
     </html>
   );
