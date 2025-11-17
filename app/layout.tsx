@@ -11,19 +11,21 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
-      <body
-        className="
-          text-white 
-          min-h-screen 
-          bg-[#0b1220]
-          bg-[url('/background_horizon.png')]
-          bg-no-repeat 
-          bg-cover 
-          bg-center 
-          bg-fixed 
-          bg-bottom
-          overflow-x-hidden
-          overflow-y-auto
+     <body
+  className="
+    relative
+    overflow-x-hidden
+    text-white 
+    min-h-screen 
+    bg-[#0b1220] 
+    bg-[url('/background_horizon.png')] 
+    bg-no-repeat 
+    bg-cover 
+    bg-center 
+    bg-fixed 
+    bg-bottom
+  "
+>
         "
       >
 
