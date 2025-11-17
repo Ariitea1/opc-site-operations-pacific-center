@@ -6,11 +6,10 @@ export default function AgentTraficPage() {
       
       {/* === IMAGE DE FOND === */}
      <img
-  src="/images/lm_opc.png"
-  alt="Agent de Trafic / Loadsheet"
-  className="absolute inset-0 w-full h-full object-cover brightness-95 z-0 scale-90"
-  style={{ transformOrigin: "center" }}
-/>
+        src="/images/lm_opc.png"
+        alt="Agent de Trafic / Loadsheet"
+        className="absolute inset-0 w-full h-full object-cover brightness-95 z-0"
+      />
 
       {/* === DÉGRADÉ DE CONTRASTE === */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#071021]/60 via-[#071021]/30 to-[#071021]/80 z-10" />
