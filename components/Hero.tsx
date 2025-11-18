@@ -2,29 +2,29 @@
 
 import { motion } from "framer-motion";
 
-// Animation container : plus lente, plus douce
+// Animation container ULTRA SLOW
 const container = {
-  hidden: { opacity: 0, y: 25 },
+  hidden: { opacity: 0, y: 35 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.0,
+      duration: 1.8,     // ← beaucoup plus lent
       ease: "easeOut",
-      staggerChildren: 0.18, // éléments qui apparaissent plus lentement
+      staggerChildren: 0.30, // ← chaque élément attend plus longtemps
     },
   },
 };
 
-// Animation des éléments individuels : plus smooth
+// Animation des éléments : très lent + easing premium
 const item = {
-  hidden: { opacity: 0, y: 22 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.9,
-      ease: [0.16, 1, 0.3, 1], // easing premium type "expo"
+      duration: 1.4,                // ← animation plus longue
+      ease: [0.16, 1, 0.3, 1],      // ← ease-out style “expo”, très smooth
     },
   },
 };
